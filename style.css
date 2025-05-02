@@ -95,3 +95,71 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.baslık {
+  background-color: #ce2829;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.banerbaslık {
+font-size: 2.5rem;
+font-weight: bold;
+margin: 0.5rem 0;
+}
+.baneruyarı {
+  font-size: 1rem;
+  font-style: italic;
+  color: #ffc107;
+  margin-bottom: 1rem;
+}
+.banerslogan span {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.banerbtn {
+  background-color: #ffc107;
+  color: black;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+.banermenu {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  padding: 20px 0;
+}
+.banermenu img {
+  width: 32px;
+  height: 32px;
+}
+.banermenu a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  font-family: sans-serif;
+  gap: 8px;
+  background-color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+.banerarkaplan {
+  background-image: url('public/assets/iteration-1/home-banner.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
