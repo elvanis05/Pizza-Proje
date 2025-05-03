@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #FAF7F2;  
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -29,6 +29,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #FAF7F2;
 }
 
 h1 {
@@ -97,48 +98,59 @@ button:focus-visible {
 }
 
 .baslık {
-  background-color: #ce2829;
+  background-color:  #CE2829;
   color: white;
-  padding: 2rem 1rem;
+  padding: 0;
   text-align: center;
 }
 .banerbaslık {
-font-size: 1.1rem;
+font-size: 1.5rem;
 font-weight: bold;
-margin: 0.1rem 0;
+margin-top: 10px;
+margin-bottom: 20px;
 }
 .baneruyarı {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-style: italic;
-  color: #ffc107;
-  margin-bottom: 1rem;
+  color: #FDC913;
+  margin: 0;
+  padding: 0;
+  font-family: 'Satisfy', cursive;
 }
 .banerslogan span {
   display: block;
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 3rem; 
+  font-weight: lighter; 
+  margin: 0; 
+  padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
 }
+.banerslogan {
+  margin0;
+}
+
+
 .banerbtn {
-  background-color: #ffc107;
-  color: black;
+  background-color: #FDC913; 
+  color: black; 
   border: none;
   padding: 0.75rem 2rem;
-  border-radius: 9999px;
-  font-weight: bold;
+  border-radius: 24px;
+  font-weight: light;
   font-size: 1rem;
   cursor: pointer;
-  margin-top: 1.5rem;
+  margin-top: 0;
 }
 .banermenu {
   display: flex;
   justify-content: center;
   background-color: white;
-  padding: 20px 0;
+  padding: 4px 0;
 
 }
 .banermenu img {
-  width: 32px;
-  height: 32px;
+  width: 20px;
+  height: 20px;
 }
 .banermenu a {
   display: flex;
@@ -155,15 +167,17 @@ margin: 0.1rem 0;
 .banerarkaplan {
   background-image: url('public/assets/iteration-1/home-banner.png');
   background-size: cover;
-  background-position: bottom;
+  background-position: bottom center;
   background-repeat: no-repeat;
-  height: 400px; 
+  height: 700px; 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  
-  
+  margin-bottom: 0;
+  padding-bottom: 0;
+  position: relative;
+  padding-top: 25px;
 }
 
 /*duyuru bölümü*/
@@ -171,15 +185,19 @@ margin: 0.1rem 0;
 .duyurular {
   display: flex;
   gap: 1rem;
-  padding: 2rem 1rem;
+  padding: 0.5rem 1rem;
+  max-width: 60%;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 .duyuru-sol {
-  flex: 2;
+  flex: 1;
   background-color: #ce2829;
   color: white;
   border-radius: 12px;
-  padding: 1.5rem;
+  padding: 0.75rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -204,7 +222,7 @@ margin: 0.1rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 150px;
+  min-height: 75px;
 }
 
 .duyuru-kutu img {
@@ -225,49 +243,57 @@ margin: 0.1rem 0;
 
 .duyuru-icerik h3 {
   margin: 0;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 .duyuru-icerik p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin: 0.5rem 0;
 }
 
 .duyuru-icerik button {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   background-color: white;
   color: #ce2829;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 0.75rem;
   font-weight: bold;
   border-radius: 8px;
   cursor: pointer;
+  font-size: 0.9rem;
 }
 
 .vurgulu {
   color: #ce2829;
   font-weight: bold;
 }
+@media (max-width: 768px) {
+  .duyurular {
+    flex-direction: column;
+    max-width: 100%;
+  }
+}
 
 /*lezzetler bölümü*/
 
 .lezzetler {
-  padding: 3rem 1rem;
+  padding: 1rem 1rem;
   background-color: #f9f6f2;
   text-align: center;
 }
 
 .lezzetler-etiket {
   color: #ce2829;
-  font-style: italic;
-  font-size: 1rem;
+  font-family: 'Satisfy', cursive;
+  font-size: 2rem;
   margin-bottom: 0.5rem;
 }
 
 .lezzetler-baslik {
   font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  color: black;
 }
 
 .lezzetler-nav {
@@ -296,10 +322,9 @@ margin: 0.1rem 0;
   width: 20px;
   height: 20px;
 }
-
-.lezzetler-nav .aktif {
-  background-color: #333;
-  color: white;
+.lezzetler-nav button:hover {
+  background-color: #1c1c1c;
+  color: #fff;
 }
 
 .lezzetler-kartlar {
@@ -310,6 +335,9 @@ margin: 0.1rem 0;
 }
 
 .urun-kart {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between ;
   background-color: white;
   padding: 1rem;
   border-radius: 12px;
@@ -320,7 +348,6 @@ margin: 0.1rem 0;
 
 .urun-kart img {
   width: 100%;
-  height: auto;
   object-fit: contain;
   margin-bottom: 1rem;
 }
@@ -351,6 +378,7 @@ margin: 0.1rem 0;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 2rem;
+  padding: 0 8rem;
 }
 
 .footer-kolon {
@@ -362,7 +390,9 @@ margin: 0.1rem 0;
 .footer-kolon h4 {
   margin-bottom: 1rem;
 }
-
+.footer-kolon img {
+  margin-bottom: 1rem; 
+}
 .iletisim-bilgileri,
 .menu-listesi {
   list-style: none;
@@ -413,4 +443,110 @@ margin: 0.1rem 0;
 .footer-alt img {
   width: 20px;
   height: 20px;
+}
+.footer-kolon:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+}
+.footer-kolon:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  justify-content: flex-start;
+}
+
+
+@media (max-width: 768px) {
+
+  body {
+    flex-direction: column;
+    place-items: initial;
+  }
+
+  #app {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .banerarkaplan {
+    height: auto;
+    padding: 2rem 1rem;
+    background-position: center;
+  }
+
+  .banerslogan span {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .banermenu {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+  .banermenu a {
+    flex: 0 0 48%; 
+    justify-content: center;
+    text-align: center;
+  }
+  .duyurular {
+    flex-direction: column;
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .duyuru-sol,
+  .duyuru-sag,
+  .duyuru-kutu {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .duyuru-kutu img,
+  .duyuru-sol img {
+    max-width: 100%;
+  }
+
+  .lezzetler-kartlar {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .urun-kart {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .footer-icerik {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .footer-alt {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .instagram-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-kolon {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-kolon:nth-child(2),
+  .footer-kolon:first-child {
+    align-items: center;
+  }
+
 }
