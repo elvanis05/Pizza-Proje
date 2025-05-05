@@ -187,6 +187,9 @@ margin-bottom: 20px;
   margin-top: 20px;
 }
 
+.duyuru-icerik {
+  position: relative;
+}
 .duyuru-sol {
   flex: 1;
   background-color: #ce2829;
@@ -342,9 +345,7 @@ margin-bottom: 20px;
   flex-wrap: wrap;
 }
 
-.lezzetler-nav button{
-  width: 33%;
-}
+
 .urun-kart {
   display: flex;
   flex-direction: column;
@@ -485,7 +486,9 @@ margin-bottom: 20px;
     height: 100vh;
     background-position: center;
   }
-
+  .lezzetler-nav button{
+    width: 33%;
+  }
   .banerslogan span {
     font-size: 2rem;
     text-align: center;
@@ -523,6 +526,17 @@ margin-bottom: 20px;
     max-width: 100%;
   }
 
+  .duyuru-icerik button {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    margin-top: 0; 
+  }
+
+  .duyuru-icerik {
+    padding-bottom: 3rem; 
+  }
+}
   .lezzetler-kartlar {
     justify-content: center;
     gap: 1rem;
@@ -534,7 +548,7 @@ margin-bottom: 20px;
   }
 
   .footer-icerik {
-    flex-direction: column;
+   
     padding: 1rem;
   }
 
